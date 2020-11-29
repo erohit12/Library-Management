@@ -2,6 +2,7 @@ DROP TABLE Res;
 DROP TABLE MEMBER;
 DROP TABLE Loan;
 DROP TABLE Class;
+DROP TABLE Borrow;
 
 CREATE TABLE Res  
 ( Resource_ID varchar2(10),  
@@ -44,4 +45,15 @@ CREATE TABLE Class
 ( Class_No number(30),
   Class_Name varchar2(20) NOT NULL,
   CONSTRAINT Clas_pk PRIMARY KEY (Class_No)  
+); 
+
+CREATE TABLE Borrow
+( Member_ID number(30),
+  Resource_ID varchar2(10),
+  Due_Date DATE,
+  Loan_ID varchar2(10),
+  CONSTRAINT Borrow_pk PRIMARY KEY (Member_ID, Resource_ID, Due_Date),
+  CONSTRAINT Borrow_fk1 FOREIGN KEY (Member_ID) REFERENCES MEMBER(Member_ID),
+  CONSTRAINT Borrow_fk2 FOREIGN KEY (Resource_ID) REFERENCES Res(Resource_ID),
+  CONSTRAINT Borrow_fk3 FOREIGN KEY (Loan_ID) REFERENCES Loan(Loan_ID)
 );
