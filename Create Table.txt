@@ -1,0 +1,47 @@
+DROP TABLE Res;
+DROP TABLE MEMBER;
+DROP TABLE Loan;
+DROP TABLE Class;
+
+CREATE TABLE Res  
+( Resource_ID varchar2(10),  
+  Resource_Type number(30) NOT NULL,  
+  Resource_Title varchar2(50),  
+  Total_Copies number(30) NOT NULL,
+  Loan_Period varchar2(20),
+  Floor_No varchar2(20),
+  Shelf_No varchar(30),
+  Author varchar2(30),
+  Publisher varchar2(30),
+  Publish_Date DATE,
+  Edit number(30),
+  Director varchar2(30),
+  Release_Date DATE,
+  Artist varchar2(30),
+  CONSTRAINT Res_pk PRIMARY KEY (Resource_ID)  
+);
+
+CREATE TABLE MEMBER
+(
+ Member_ID number(30),
+ Member_Type varchar2(30) NOT NULL,
+ Member_Name varchar2(20) NOT NULL,
+ Member_Email varchar2(20) NOT NULL,
+ Expiry_Date DATE NOT NULL,
+ CONSTRAINT Mem_pk PRIMARY KEY (Member_ID)  
+);
+
+
+CREATE TABLE Loan  
+( Loan_ID varchar2(10),  
+  Return_Date DATE,
+  Date_Paid DATE,
+  Amount_Paid number(30),
+  CONSTRAINT Loan_pk PRIMARY KEY (Loan_ID)  
+);
+
+CREATE TABLE Class  
+( Class_No number(30),
+  Class_Name varchar2(20) NOT NULL,
+  CONSTRAINT Clas_pk PRIMARY KEY (Class_No)  
+);
