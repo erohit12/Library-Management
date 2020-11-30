@@ -1,27 +1,75 @@
 DROP TABLE Enrol;
 DROP TABLE Borrow;
-DROP TABLE Class;
-DROP TABLE Loan;
-DROP TABLE Res;
 DROP TABLE MEMBER;
 DROP TABLE Copies;
+DROP TABLE Loan;
+DROP TABLE BOOK;
+DROP TABLE Video;
+DROP TABLE DVD;
+DROP TABLE CD;
+DROP TABLE Res;
+DROP TABLE Class;
+
+
+CREATE TABLE Class  
+( Class_No number(10),
+  Class_Name varchar2(250) NOT NULL UNIQUE,
+  CONSTRAINT Class_pk PRIMARY KEY (Class_No)  
+); 
 
 CREATE TABLE Res  
 ( Resource_ID varchar2(10),  
-  Resource_Type varchar2(10) NOT NULL,  
   Resource_Title varchar2(250) NOT NULL,
   Total_Copies number(10) NOT NULL,
   Loan_Period number(10) NOT NULL,
   Floor_No number(10) NOT NULL,
   Shelf_No varchar2(20) NOT NULL,
-  Author varchar2(250),
-  Publisher varchar2(250),
+  Class_no number(10) NOT NULL,
+  CONSTRAINT Loan_Period_Check
+   CHECK (Loan_Period IN (0, 2, 48, 168)),
+  CONSTRAINT Floor_No_check
+   CHECK (Floor_No IN (0,1,2)),
+  CONSTRAINT unique_floornshelf UNIQUE(Floor_No, Shelf_No), /* Unique Combination of Floor No. and Shelf No.*/
+  CONSTRAINT Res_pk PRIMARY KEY (Resource_ID),
+  CONSTRAINT Res_fk FOREIGN KEY (Class_No) REFERENCES Class(Class_No)
+);
+
+CREATE TABLE BOOK
+( Resource_ID varchar2(10),
+  Author varchar2(250) NOT NULL,
+  Publisher varchar2(250) NOT NULL,
   Publish_Date DATE,
   Edit number(10),
-  Director varchar2(250),
-  Release_Date DATE,
+  CONSTRAINT BOOK_pk PRIMARY KEY (Resource_ID),
+  CONSTRAINT BOOK_fk FOREIGN KEY (Resource_ID)
+    REFERENCES Res(Resource_ID)
+);
+
+CREATE TABLE Video
+( Resource_ID varchar2(10),
+  Director varchar2(250) NOT NULL,
+  Release_Date DATE NOT NULL,
+  CONSTRAINT Video_pk PRIMARY KEY (Resource_ID),
+  CONSTRAINT Video_fk FOREIGN KEY (Resource_ID)
+    REFERENCES Res(Resource_ID)
+);
+
+CREATE TABLE DVD
+( Resource_ID varchar2(10),
+  Director varchar2(250) NOT NULL,
+  Artist varchar2(250) NOT NULL,
+  CONSTRAINT DVD_pk PRIMARY KEY (Resource_ID),
+  CONSTRAINT DVD_fk FOREIGN KEY (Resource_ID)
+    REFERENCES Res(Resource_ID)  
+);
+
+CREATE TABLE CD
+( Resource_ID varchar2(10),
   Artist varchar2(250),
-  CONSTRAINT Res_pk PRIMARY KEY (Resource_ID)  
+  Release_Date DATE,
+  CONSTRAINT CD_pk PRIMARY KEY (Resource_ID),
+  CONSTRAINT CD_fk FOREIGN KEY (Resource_ID)
+    REFERENCES Res(Resource_ID)
 );
 
 CREATE TABLE Loan  
@@ -29,18 +77,16 @@ CREATE TABLE Loan
   Return_Date DATE,
   Date_Paid DATE,
   Amount_Paid number(20),
-  CONSTRAINT Loan_pk PRIMARY KEY (Loan_ID)  
+  CONSTRAINT Loan_pk PRIMARY KEY (Loan_ID)
 );
-
-CREATE TABLE Class  
-( Class_No number(10),
-  Class_Name varchar2(250) NOT NULL,
-  CONSTRAINT Class_pk PRIMARY KEY (Class_No)  
-); 
 
 CREATE TABLE Copies
 ( Member_Type varchar2(20),
   Copies_Allowed number(10),
+  CONSTRAINT Member_Type 
+   CHECK (Member_Type IN ('STUDENT', 'STAFF')),
+  CONSTRAINT Copies_Allowed
+   CHECK (Copies_Allowed IN (5, 10)),
   CONSTRAINT Copies_pk PRIMARY KEY (Member_Type)
 );
 
@@ -51,6 +97,8 @@ CREATE TABLE MEMBER
  Member_Name varchar2(250) NOT NULL,
  Member_Email varchar2(1000) NOT NULL,
  Expiry_Date DATE NOT NULL,
+ CHECK (Member_Email LIKE '%@%'), /* Checks email has @*/
+ CHECK (Member_Email LIKE '%.%'), /* Checks email has .*/
  CONSTRAINT Mem_pk PRIMARY KEY (Member_ID),
  CONSTRAINT Mem_fk FOREIGN KEY (Member_Type) REFERENCES Copies(Member_Type)
 );
@@ -58,8 +106,8 @@ CREATE TABLE MEMBER
 CREATE TABLE Borrow
 ( Member_ID number(30),
   Resource_ID varchar2(10),
-  Due_Date DATE,
-  Loan_ID varchar2(10),
+  Due_Date DATE NOT NULL,
+  Loan_ID varchar2(10) NOT NULL,
   CONSTRAINT Borrow_pk PRIMARY KEY (Member_ID, Resource_ID, Due_Date),
   CONSTRAINT Borrow_fk1 FOREIGN KEY (Member_ID) REFERENCES MEMBER(Member_ID),
   CONSTRAINT Borrow_fk2 FOREIGN KEY (Resource_ID) REFERENCES Res(Resource_ID),
