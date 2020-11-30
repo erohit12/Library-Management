@@ -127,3 +127,66 @@ INSERT INTO MEMBER
 VALUES (202113, 'Staff', 'Sonia', 's.patel@qmul.ac.uk', '31-JAN-2023')
 ;
 SELECT * FROM MEMBER;
+
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (1, 'Computing and Information Systems')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (2, 'Actuarial Science')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (3, 'Biomedical Sciences')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (4, 'Electronic Engineering')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (5, 'Law')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (6, 'Accounting and Finance')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (7, 'French and Politics')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (8, 'Finance')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (9, 'Film Studies and Drama')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (10, 'Business Management')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (11, 'Computer Science')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (12, 'Chemistry')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (13, 'History')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (14, 'Dentistry')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (15, 'Materials Science and Engineering')
+;
+SELECT * FROM Class;
+
