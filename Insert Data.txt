@@ -1,0 +1,129 @@
+INSERT INTO Copies
+(Member_Type, Copies_Allowed)
+VALUES ('Student', 5);
+INSERT INTO Copies
+(Member_Type, Copies_Allowed)
+VALUES ('Staff', 10);
+SELECT * FROM Copies;
+
+INSERT INTO Loan
+
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (50, '29-DEC-20', '29-DEC-20', 10);
+
+SELECT * FROM Loan;
+
+
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202001, 'Student', 'Shajeda', 'shajedasyed@yahoo.com', '23-JAN-2023')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202002, 'Student', 'Kayley', 'kanett@hotmail.co.uk', '28-JAN-2024')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202003, 'Student', 'Purvi', 'purvimandodadoda@hotmail.co.uk', '21-JAN-2023')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202004, 'Student', 'Steven', 'stevencorpuz@gmail.co.uk', '14-JAN-2023')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202005, 'Student', 'Hana', 'hanarahman@hotmail.com', '29-JAN-2021')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202006, 'Student', 'Rohit', 'rohitgarg12@hotmail.com', '14-JAN-2023')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202007, 'Student', 'Tanya', 'tanyasyed_@yahoo.com', '20-JAN-2024')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202008, 'Student', 'Cef', 'cefalrahman@hotmail.com', '22-JAN-2024')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202009, 'Student', 'Daniel', 'debenham_dan@hotmail.co.uk', '25-JAN-2023')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202010, 'Student', 'Holly', 'hollylou@outlook.co.uk', '30-JAN-2023')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202011, 'Student', 'Rafayet', 'rafayettarafder@live.co.uk', '21-JAN-2022')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202012, 'Student', 'Ope', 'oppeeeee@outlook.co.uk', '21-JAN-2022')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202013, 'Student', 'Jack', 'jack_1995@hotmail.co.uk', '25-JAN-2023')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202014, 'Student', 'Teddy', 'teddy.moonshine@live.co.uk', '29-JAN-2022')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202015, 'Student', 'Maria', 'maria.678@gmail.com', '21-JAN-2021')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202101, 'Staff', 'Vicky', 'v.anderson@qmul.ac.uk', '25-JAN-2029')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202102, 'Staff', 'Mahesha', 'm.soong@qmul.ac.uk', '25-JAN-2031')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202103, 'Staff', 'Chris', 'c.davidson2@qmul.ac.uk', '25-JAN-2035')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202104, 'Staff', 'Fabrizio', 'c.caine@qmul.ac.uk', '19-JAN-2021')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202105, 'Staff', 'Mark', 'm.amaral@qmul.ac.uk', '28-JAN-2033')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202106, 'Staff', 'Sophie', 's.willoughby@qmul.ac.uk', '29-JAN-2035')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202107, 'Staff', 'Paula', 'p.lopez@qmul.ac.uk', '29-JAN-2021')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202108, 'Staff', 'Clive', 'c.steele@qmul.ac.uk', '31-JAN-2022')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202109, 'Staff', 'Nenna', 'n.laal@qmul.ac.uk', '24-JAN-2025')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202110, 'Staff', 'Anne', 'a.zhang@qmul.ac.uk', '29-JAN-2025')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202111, 'Staff', 'Nicola', 'n.phillips@qmul.ac.uk', '23-JAN-2022')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202112, 'Staff', 'Ken', 'ken.jones@qmul.ac.uk', '21-JAN-2027')
+;
+INSERT INTO MEMBER
+(Member_ID, Member_Type, Member_Name, Member_Email, Expiry_Date)
+VALUES (202113, 'Staff', 'Sonia', 's.patel@qmul.ac.uk', '31-JAN-2023')
+;
+SELECT * FROM MEMBER;
