@@ -84,7 +84,7 @@ CREATE TABLE Copies
 ( Member_Type varchar2(20),
   Copies_Allowed number(10),
   CONSTRAINT Member_Type 
-   CHECK (Member_Type IN ('STUDENT', 'STAFF')),
+   CHECK (Member_Type IN ('Student', 'Staff')),
   CONSTRAINT Copies_Allowed
    CHECK (Copies_Allowed IN (5, 10)),
   CONSTRAINT Copies_pk PRIMARY KEY (Member_Type)
