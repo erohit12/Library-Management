@@ -470,7 +470,7 @@ VALUES (199510, 'In the Midst of Life', 5, 14, 0, 141, 38)
 ;
 INSERT INTO Res
 (Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
-VALUES (196101, 'Eye of the Tiger', 1, 14, 2, 335, 44)
+VALUES (196101, 'Eye of the Tiger', 1, 14, 2, 301, 44)
 ;
 INSERT INTO Res
 (Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
@@ -478,7 +478,7 @@ VALUES (196102, 'The Life of Bo Jones', 1, 14, 2, 294, 26)
 ;
 INSERT INTO Res
 (Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
-VALUES (196103, 'Cooking with Ingra', 1, 14, 2, 328, 73)
+VALUES (196103, 'Cooking with Ingra', 1, 14, 2, 212, 73)
 ;
 INSERT INTO Res
 (Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
@@ -494,11 +494,11 @@ VALUES (196106, 'The Future of AI', 7, 14, 2, 469, 11)
 ;
 INSERT INTO Res
 (Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
-VALUES (196107, 'Playing Games', 1, 14, 2, 462, 65)
+VALUES (196107, 'Playing Games', 1, 14, 2, 267, 65)
 ;
 INSERT INTO Res
 (Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
-VALUES (196108, 'Music Theory', 1, 14, 2, 351, 74)
+VALUES (196108, 'Music Theory', 1, 14, 2, 128, 74)
 ;
 INSERT INTO Res
 (Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
