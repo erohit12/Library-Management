@@ -1,17 +1,219 @@
+
 INSERT INTO Copies
 (Member_Type, Copies_Allowed)
-VALUES ('Student', 5);
+VALUES ('Student', 5)
+;
 INSERT INTO Copies
 (Member_Type, Copies_Allowed)
-VALUES ('Staff', 10);
+VALUES ('Staff', 10)
+;
 SELECT * FROM Copies;
 
+
+
 INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (50, '29-NOV-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (49, '11-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (48, '06-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (47, '02-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (46, '02-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (45, '09-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (44, '09-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (43, '03-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (42, '08-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (41, '02-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (40, '01-DEC-20')
+;
 
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (39, '13-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (38, '07-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (37, '11-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (36, '08-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (35, '09-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (34, '04-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (33, '06-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (32, '09-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (31, '08-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (30, '14-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (29, '08-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (28, '11-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (27, '13-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (26, '01-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (25, '12-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (24, '03-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (23, '07-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (22, '02-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (21, '02-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (20, '14-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (19, '01-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (18, '03-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (17, '05-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (16, '29-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (15, '11-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (14, '06-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (13, '08-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (12, '03-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (11, '04-DEC-20')
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date)
+VALUES (10, '01-DEC-20')
+;
+INSERT INTO Loan
 (Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (50, '29-DEC-20', '29-DEC-20', 10);
-
+VALUES (9, '01-DEC-20', '01-DEC-20', 2)
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (8, '05-DEC-20', '05-DEC-20', 10)
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (7, '10-DEC-20', '10-DEC-20', 3)
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (6, '09-DEC-20', '09-DEC-20', 1)
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (5, '03-DEC-20', '03-DEC-20', 2)
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (4, '07-DEC-20', '07-DEC-20', 3)
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (3, '01-DEC-20', '01-DEC-20', 1)
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (2, '08-DEC-20', '08-DEC-20', 2)
+;
+INSERT INTO Loan
+(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
+VALUES (1, '01-DEC-20', '01-DEC-20', 5)
+;
 SELECT * FROM Loan;
+
 
 
 INSERT INTO MEMBER
@@ -128,6 +330,13 @@ VALUES (202113, 'Staff', 'Sonia', 's.patel@qmul.ac.uk', '31-JAN-2023')
 ;
 SELECT * FROM MEMBER;
 
+
+ 
+
+
+
+
+ 
 INSERT INTO Class
 (Class_No, Class_Name)
 VALUES (1, 'Computing and Information Systems')
@@ -188,5 +397,410 @@ INSERT INTO Class
 (Class_No, Class_Name)
 VALUES (15, 'Materials Science and Engineering')
 ;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (17, 'Computer Programming')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (19, 'Iridology')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (38, 'Literature')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (42, 'Anatomy')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (26, 'Biology')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (27, 'Forensic Science')
+;
+INSERT INTO Class
+(Class_No, Class_Name)
+VALUES (28, 'Physics')
+;
 SELECT * FROM Class;
 
+
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199501, 'Forensic Science', 2, 14, 1, 50, 27)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199502, 'Crime Scene to Court: The Essentials of Forensic Science', 1, 14, 1, 51, 8)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199503, 'The Law Book: Big Ideas Simply Explained', 1, 14, 0, 80, 5)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199504, 'The Human Bone Manual', 1, 14, 0, 112, 5)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199505, 'Python for Data Analysis, 2e: Data Wrangling with Pandas, Numpy, and Ipython', 4, 2, 2, 25, 17)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199506, 'Python: For Beginners A Crash Course Guide To Learn Python in 1 Week', 2, 2, 2, 35, 11)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199507, 'The Eye: Basic Sciences in Practice', 1, 14, 1, 63, 19)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199508, 'Science and Development of Muscle Hypertrophy', 2, 14, 1, 119, 42)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199509, 'The Silent Patient', 2, 14, 0, 25, 38)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199510, 'In the Midst of Life', 5, 14, 0, 141, 38)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196101, 'Eye of the Tiger', 1, 14, 2, 335, 44)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196102, 'The Life of Bo Jones', 1, 14, 2, 294, 26)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196103, 'Cooking with Ingra', 1, 14, 2, 328, 73)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196104, 'The Human Body', 3, 14, 2, 422, 42)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196105, 'Skin and Bones', 1, 14, 2, 367, 68)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196106, 'The Future of AI', 7, 14, 2, 469, 11)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196107, 'Playing Games', 1, 14, 2, 462, 65)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196108, 'Music Theory', 1, 14, 2, 351, 74)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196109, 'Robotics', 1, 14, 2, 510, 17)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (196110, 'Paris in 5 Days', 1, 14, 2, 460, 58)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199601, 'Python for Beginners', 4, 14, 1, 89, 11)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199602, 'WW2:True Stories', 1, 14, 1, 46, 13)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199603, 'Law and Order', 1, 14, 1, 62, 5)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199604, 'War on Drugs', 1, 14, 1, 105, 5)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199605, 'The Animal Kingdom', 1, 14, 1, 460, 26)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199606, 'A Question of Ethics', 1, 14, 1, 80, 5)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199607, 'American Civil Rights', 1, 14, 1, 69, 5)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199608, 'Statistics', 1, 14, 1, 100, 8)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199609, 'The Red Planet', 1, 14, 1, 212, 28)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (199610, 'Our Solar System', 1, 14, 1, 213, 28)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193401, 'The Animal Kingdom', 1, 14, 1, 263, 26)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193402, 'Forensic Science', 1, 14, 1, 300, 27)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193403, 'The Basics of Python', 3, 14, 1, 200, 1)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193404, 'Blood Spatter Analysis', 1, 14, 1, 62, 27)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193405, 'Scanning Electron Microscopy', 1, 14, 1, 69, 27)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193406, 'African Safari', 1, 14, 1, 120, 1)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193407, 'The Goldilocks Zone', 1, 14, 1, 139, 1)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193408, 'Life of Crime', 1, 14, 1, 269, 1)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193409, 'The First World War', 1, 14, 1, 216, 1)
+;
+INSERT INTO Res
+(Resource_ID, Resource_Title, Total_Copies, Loan_Period, Floor_No, Shelf_No, Class_no)
+VALUES (193410, 'DNA Sequencing', 1, 14, 1, 117, 27)
+;
+SELECT * FROM Res;
+
+
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199501, 'Mike Milligan', 'HarperCollins', '15-DEC-14', 1)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199502, 'Alice Newman', 'Oxford', '15-DEC-18', 2)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199503, 'Fatima Choudhury', 'Penguin', '15-DEC-12', 1)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199504, 'Laura Black', 'Cambridge Press', '15-DEC-16', 3)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199505, 'Cole Esher', 'Red House', '15-DEC-14', 1)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199506, 'Kat Park', 'HarperCollins', '15-DEC-13', 1)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199507, 'Emmett Fox', 'Bloomsbury', '15-DEC-09', 1)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199508, 'Jenny Jones', 'Macmillan', '15-DEC-04', 4)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199509, 'Beau Allard', 'Pearson Education', '15-DEC-17', 1)
+;
+INSERT INTO BOOK
+(Resource_ID, Author, Publisher, Publish_Date, Edit)
+VALUES (199510, 'Carla Dela Pena', 'Bloomsbury', '15-DEC-10', 4)
+;
+SELECT * FROM BOOK;
+
+
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196101, 'Naomi Parker', '24-JAN-12')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196102, 'Kendrick Smith', '05-APR-19')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196103, 'Jules Verner', '30-JUL-18')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196104, 'Suella Burns', '09-FEB-19')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196105, 'John Adams', '27-NOV-15')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196106, 'Arthur Read', '08-OCT-18')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196107, 'Ophelia Wroe', '28-JAN-17')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196108, 'Nazrin Uddin', '21-OCT-14')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196109, 'Raksha Patel', '13-JAN-16')
+;
+INSERT INTO Video
+(Resource_ID, Director, Release_Date)
+VALUES (196110, 'Carmen Lo', '06-MAR-17')
+;
+SELECT * FROM Video;
+
+
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199601, 'Holly News', '18-MAY-17')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199602, 'Melissa White', '24-FEB-20')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199603, 'Faizan Alim', '21-MAR-18')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199604, 'Andres Luna', '14-APR-12')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199605, 'Hanisha Dubasia', '04-AUG-18')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199606, 'Montaha Behum', '08-NOV-16')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199607, 'Shaira Malik', '14-FEB-17')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199608, 'Lisa Jones', '09-SEP-19')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199609, 'Buster Baxter', '07-MAY-13')
+;
+INSERT INTO CD
+(Resource_ID, Artist, Release_Date)
+VALUES (199610, 'Peggy Michaelson', '24-DEC-15')
+;
+SELECT * FROM CD;
+
+
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193401, 'Cameron Carter', '16-AUG-19')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193402, 'Abdul Shah', '23-MAR-17')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193403, 'Jessminda Patel', '03-JAN-18')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193404, 'May Sung', '12-OCT-15')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193405, 'Saleha Bagom', '06-OCT-14')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193406, 'Nazma Hussein', '14-MAY-16')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193407, 'Eve Valentine', '21-SEP-19')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193408, 'Emily Stock', '08-OCT-13')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193409, 'Ronald Johnson', '01-FEB-18')
+;
+INSERT INTO DVD
+(Resource_ID, Director, Release_Date)
+VALUES (193410, 'Jeremy Coulter', '09-DEC-19')
+;
+SELECT * FROM DVD;
+
+
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202001, 26, '24-SEP-19')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202002, 15, '19-SEP-20')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202003, 14, '24-SEP-19')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202004, 27, '24-SEP-19')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202005, 28, '24-SEP-17')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202006, 13, '24-SEP-19')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202007, 12, '24-SEP-20')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202008, 11, '24-SEP-20')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202009, 10, '24-SEP-19')
+;
+INSERT INTO Enrol
+(Member_ID, Class_No, Enrol_Date)
+VALUES (202010, 9, '24-SEP-19')
+;
+SELECT * FROM Enrol;
