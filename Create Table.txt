@@ -29,7 +29,7 @@ CREATE TABLE Res
    CHECK (Loan_Period IN (0, 2, 14)),
   CONSTRAINT Floor_No_check
    CHECK (Floor_No IN (0,1,2)),
-  CONSTRAINT unique_floornshelf UNIQUE(Floor_No, Shelf_No), 
+  UNIQUE(Floor_No, Shelf_No), 
   CONSTRAINT Res_pk PRIMARY KEY (Resource_ID),
   CONSTRAINT Res_fk FOREIGN KEY (Class_No) REFERENCES Class(Class_No)
 );
@@ -91,16 +91,15 @@ CREATE TABLE Copies
 );
 
 CREATE TABLE MEMBER
-(
- Member_ID number(30),
- Member_Type varchar2(20) NOT NULL,
- Member_Name varchar2(250) NOT NULL,
- Member_Email varchar2(1000) NOT NULL,
- Expiry_Date DATE NOT NULL,
- CHECK (Member_Email LIKE '%@%'), 
- CHECK (Member_Email LIKE '%.%'), 
- CONSTRAINT Mem_pk PRIMARY KEY (Member_ID),
- CONSTRAINT Mem_fk FOREIGN KEY (Member_Type) REFERENCES Copies(Member_Type)
+( Member_ID number(30),
+  Member_Type varchar2(20) NOT NULL,
+  Member_Name varchar2(250) NOT NULL,
+  Member_Email varchar2(1000) NOT NULL,
+  Expiry_Date DATE NOT NULL,
+  CHECK (Member_Email LIKE '%@%'), 
+  CHECK (Member_Email LIKE '%.%'), 
+  CONSTRAINT Mem_pk PRIMARY KEY (Member_ID),
+  CONSTRAINT Mem_fk FOREIGN KEY (Member_Type) REFERENCES Copies(Member_Type)
 );
 
 CREATE TABLE Borrow
