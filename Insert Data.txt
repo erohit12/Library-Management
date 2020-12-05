@@ -1,3 +1,16 @@
+DELETE FROM Enrol;
+DELETE FROM Borrow;
+DELETE FROM MEMBER;
+DELETE FROM Copies;
+DELETE FROM Fine_Payment;
+DELETE FROM Loan;
+DELETE FROM BOOK;
+DELETE FROM Video;
+DELETE FROM DVD;
+DELETE FROM CD;
+DELETE FROM Res;
+DELETE FROM Class;
+
 INSERT INTO Copies
 (Member_Type, Copies_Allowed)
 VALUES ('Student', 5)
@@ -7,7 +20,6 @@ INSERT INTO Copies
 VALUES ('Staff', 10)
 ;
 SELECT * FROM Copies;
-
 
 
 INSERT INTO Loan
@@ -32,15 +44,15 @@ VALUES (46, '02-DEC-20')
 ;
 INSERT INTO Loan
 (Loan_ID, Return_Date)
-VALUES (45, '09-DEC-20')
+VALUES (45, '05-DEC-20')
 ;
 INSERT INTO Loan
 (Loan_ID, Return_Date)
-VALUES (44, '09-DEC-20')
+VALUES (44, '13-DEC-20')
 ;
 INSERT INTO Loan
 (Loan_ID, Return_Date)
-VALUES (43, '03-DEC-20')
+VALUES (43, '12-DEC-20')
 ;
 INSERT INTO Loan
 (Loan_ID, Return_Date)
@@ -48,11 +60,11 @@ VALUES (42, '08-DEC-20')
 ;
 INSERT INTO Loan
 (Loan_ID, Return_Date)
-VALUES (41, '02-DEC-20')
+VALUES (41, '04-DEC-20')
 ;
 INSERT INTO Loan
 (Loan_ID, Return_Date)
-VALUES (40, '01-DEC-20')
+VALUES (40, '14-DEC-20')
 ;
 
 INSERT INTO Loan
@@ -175,44 +187,8 @@ INSERT INTO Loan
 (Loan_ID, Return_Date)
 VALUES (10, '01-DEC-20')
 ;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (9, '01-DEC-20', '01-DEC-20', 2)
-;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (8, '05-DEC-20', '05-DEC-20', 10)
-;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (7, '10-DEC-20', '10-DEC-20', 3)
-;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (6, '09-DEC-20', '09-DEC-20', 1)
-;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (5, '03-DEC-20', '03-DEC-20', 2)
-;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (4, '07-DEC-20', '07-DEC-20', 3)
-;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (3, '01-DEC-20', '01-DEC-20', 1)
-;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (2, '08-DEC-20', '08-DEC-20', 2)
-;
-INSERT INTO Loan
-(Loan_ID, Return_Date, Date_Paid, Amount_Paid)
-VALUES (1, '01-DEC-20', '01-DEC-20', 5)
-;
-SELECT * FROM Loan;
 
+SELECT * FROM Loan;
 
 
 INSERT INTO MEMBER
@@ -330,12 +306,7 @@ VALUES (202113, 'Staff', 'Sonia', 's.patel@qmul.ac.uk', '31-JAN-2023')
 SELECT * FROM MEMBER;
 
 
- 
 
-
-
-
- 
 INSERT INTO Class
 (Class_No, Class_Name)
 VALUES (1, 'Computing and Information Systems')
@@ -804,3 +775,128 @@ INSERT INTO Enrol
 VALUES (202010, 9, '24-SEP-19')
 ;
 SELECT * FROM Enrol;
+
+
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202001, 193409, '02-DEC-20', 24)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202002, 193401, '04-DEC-20', 25)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202003, 193402, '11-DEC-20', 23)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202004, 199501, '07-DEC-20', 22)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202005, 199502, '10-DEC-20', 21)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202006, 199503, '13-DEC-20', 20)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202007, 199504, '08-DEC-20', 19)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202008, 199505, '03-DEC-20', 18)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202009, 199506, '06-DEC-20', 17)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202010, 199507, '11-DEC-20', 10)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202012, 199508, '07-DEC-20', 11)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202013, 199610, '13-DEC-20', 12)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202014, 199609, '09-DEC-20', 13)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202015, 199608, '06-DEC-20', 14)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202101, 199607, '14-DEC-20', 15)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202102, 199606, '09-DEC-20', 16)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202103, 196101, '12-DEC-20', 17)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202104, 196102, '08-DEC-20', 18)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202105, 196103, '02-DEC-20', 19)
+;
+INSERT INTO Borrow
+(Member_ID, Resource_ID, Due_Date, Loan_ID)
+VALUES (202106, 196104, '05-DEC-20', 20)
+;
+SELECT * FROM Borrow;
+
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (40, '13-DEC-20', 1)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (41, '03-DEC-20', 1)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (42, '06-DEC-20', 2)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (43, '11-DEC-20', 1)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Due_Date, Amount_Paid)
+VALUES (44, '13-DEC-20', 1)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (45, '02-DEC-20', 3)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (46, '07-DEC-20', 5)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (47, '14-DEC-20', 1)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (48, '09-DEC-20', 10)
+;
+INSERT INTO Fine_Payment
+(Loan_ID, Date_Paid, Amount_Paid)
+VALUES (49,'04-DEC-20', 1)
+;
+SELECT * FROM Fine_Payment;
