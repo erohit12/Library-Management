@@ -876,7 +876,7 @@ INSERT INTO Fine_Payment
 VALUES (43, '11-DEC-20', 1)
 ;
 INSERT INTO Fine_Payment
-(Loan_ID, Due_Date, Amount_Paid)
+(Loan_ID, Date_Paid, Amount_Paid)
 VALUES (44, '13-DEC-20', 1)
 ;
 INSERT INTO Fine_Payment
