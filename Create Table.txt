@@ -2,6 +2,7 @@ DROP TABLE Enrol;
 DROP TABLE Borrow;
 DROP TABLE MEMBER;
 DROP TABLE Copies;
+DROP TABLE Fine_Payment;
 DROP TABLE Loan;
 DROP TABLE BOOK;
 DROP TABLE Video;
@@ -75,9 +76,12 @@ CREATE TABLE CD
 CREATE TABLE Loan  
 ( Loan_ID varchar2(10),  
   Return_Date DATE,
-  Date_Paid DATE,
-  Amount_Paid number(20),
   CONSTRAINT Loan_pk PRIMARY KEY (Loan_ID)
+);
+CREATE TABLE Fine_Payment
+( Loan_ID varchar2(10),
+  Amount_Paid number(20),
+  CONSTRAINT FinePayment_pk PRIMARY KEY (Loan_ID)
 );
 
 CREATE TABLE Copies
@@ -120,4 +124,4 @@ CREATE TABLE Enrol
   CONSTRAINT Enrol_pk PRIMARY KEY (Member_ID, Class_No),
   CONSTRAINT Enrol_fk1 FOREIGN KEY (Member_ID) REFERENCES MEMBER(Member_ID),
   CONSTRAINT Enrol_fk2 FOREIGN KEY (Class_No) REFERENCES Class(Class_No)
-);
+); 
