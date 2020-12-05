@@ -99,7 +99,7 @@ CREATE TABLE MEMBER
 ( Member_ID number(30),
   Member_Type varchar2(20) NOT NULL,
   Member_Name varchar2(250) NOT NULL,
-  Member_Email varchar2(1000) NOT NULL,
+  Member_Email varchar2(1000) NOT NULL UNIQUE,
   Expiry_Date DATE NOT NULL,
   CHECK (Member_Email LIKE '%@%'), 
   CHECK (Member_Email LIKE '%.%'), 
