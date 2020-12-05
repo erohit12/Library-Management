@@ -22,173 +22,173 @@ VALUES ('Staff', 10)
 SELECT * FROM Copies;
 
 
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (50, '29-NOV-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (49, '11-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (48, '06-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (47, '02-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (46, '02-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (45, '05-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (44, '13-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (43, '12-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (42, '08-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (41, '04-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (40, '14-DEC-20')
 ;
 
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (39, '13-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (38, '07-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (37, '11-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (36, '08-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (35, '09-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (34, '04-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (33, '06-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (32, '09-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (31, '08-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (30, '14-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (29, '08-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (28, '11-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (27, '13-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (26, '01-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (25, '12-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (24, '03-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (23, '07-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (22, '02-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (21, '02-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (20, '14-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (19, '01-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (18, '03-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (17, '05-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (16, '29-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (15, '11-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (14, '06-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (13, '08-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (12, '03-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (11, '04-DEC-20')
 ;
-INSERT INTO Loan
+INSERT INTO Return
 (Loan_ID, Return_Date)
 VALUES (10, '01-DEC-20')
 ;
 
-SELECT * FROM Loan;
+SELECT * FROM Return;
 
 
 INSERT INTO MEMBER
