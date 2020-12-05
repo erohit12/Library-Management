@@ -80,6 +80,7 @@ CREATE TABLE Loan
 );
 CREATE TABLE Fine_Payment
 ( Loan_ID varchar2(10),
+  Date_Paid Date,
   Amount_Paid number(20),
   CONSTRAINT FinePayment_pk PRIMARY KEY (Loan_ID)
 );
